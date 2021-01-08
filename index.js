@@ -18,7 +18,7 @@ function fetchBitcoinPrice() {
       let rateValue = parseFloat(rateWithoutCommas)
       let currentPrice = bitcoinOwned * rateValue
 
-      let isGain = currentPrice - initialPurchasePrice > 0
+      let isGain = currentPrice - 1200 > 0
       let styleColor = isGain ? "green" : "red"
 
       let element = document.getElementById("gr-pot-price")
